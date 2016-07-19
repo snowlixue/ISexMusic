@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 第一行 -->
+
+    <com.yuezhi.activity.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/sidebar" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/top_index_linear"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ff515151"
+                android:clickable="true"
+                android:dividerPadding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:showDividers="middle" >
+
+                <!-- 三条横线： -->
+
+                <ImageView
+                    android:id="@+id/menu_navigation"
+                    android:layout_width="45dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_menu_navigation_when_pressed"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/button_menu_navigation" />
+
+                <include layout="@layout/layout_title_bar" />
+            </LinearLayout>
+
+            <!-- 歌曲列表 -->
+
+            <ListView
+                android:id="@+id/music_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_index_linear"
+                android:layout_marginBottom="50dp"
+                android:cacheColorHint="#ffffff"
+                android:dividerHeight="1dip"
+                android:listSelector="#00000000" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/singleSong_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <!-- 本意是做识别歌曲的专辑图片，这里简化，定成一张不会变化的图片——app图标 -->
+
+                <ImageView
+                    android:id="@+id/music_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#ff515151"
+                    android:src="@drawable/ic_launcher" />
+
+                <RelativeLayout
+                    android:id="@+id/music_about_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_alignTop="@id/music_album"
+                    android:layout_toRightOf="@id/music_album"
+                    android:background="#ff515151" >
+
+                    <!-- 歌曲的名字 -->
+
+                    <com.yuezhi.marquee.MarqueeText
+                        android:id="@+id/music_name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5.0dp"
+                        android:layout_marginTop="5.0dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:text="@string/music_name"
+                        android:textColor="#ffffff" />
+                    <!-- 歌手 -->
+
+                    <com.yuezhi.marquee.MarqueeText
+                        android:id="@+id/music_singer"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        
+                        android:layout_alignLeft="@+id/music_name"
+                        android:layout_below="@+id/music_name"
+                        android:text="@string/music_singer"
+                        android:textColor="#ffffff" />
+
+                    <!-- 播放下一首 -->
+
+                    <Button
+                        android:id="@+id/next_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="62dp"
+                        android:background="@drawable/index_button_next_selector"
+                        android:onClick="buttonClick" />
+                    <!-- 播放或暂停 -->
+
+                    <Button
+                        android:id="@+id/playing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/next_song"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toLeftOf="@+id/next_song"
+                        android:background="@drawable/button_play"
+                        android:onClick="buttonClick" />
+                    <!-- 为了和谐，修改 -->
+                    <!-- android:background="@drawable/index_button_playing_selector" -->
+                    <!-- 排序的列表 -->
+
+                    <Button
+                        android:id="@+id/all_music_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/next_song"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/index_button_playlist_selector"
+                        android:onClick="popupmenu_popupmenu" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.yuezhi.activity.SlideMenu>
+
+</LinearLayout>

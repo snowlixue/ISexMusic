@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 清單文件 -->
+    <string name="app_name">乐知</string>
+    <!-- index.xml -->
+    <string name="index_text1_view">网络</string>
+    <string name="index_text2_view">本地</string>
+    <!-- index.xml  single_music_playing.xml -->
+    <string name="music_name">乐知</string>
+    <string name="music_singer">欣赏好音乐</string>
+    <!-- sidebar.xml -->
+    <string name="login_and_register">登陆/注册</string>
+    <string name="playing_list">播放列表</string>
+    <string name="system_settings">系统设置</string>
+    <string name="change_version">版本信息</string>
+    <string name="at_time_close">定时提醒</string>
+    <string name="exit">退出</string>
+    <!-- single_music_playing.xml -->
+    <string name="process_time">00:00</string>
+    <!-- login_layout.xml -->
+    <string name="other_login">其他登录方式</string>
+    <string name="AppName">乐知</string>
+    <string name="login">登录</string>
+    <string name="register">乐知用户注册</string>
+    <string name="username">用户名</string>
+    <string name="please_username">请输入用户名</string>
+    <string name="password">密 \t 码</string>
+    <string name="please_password">请输入密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <!-- setting_layout.xml -->
+    <string name="setting">系统设置</string>
+    <string name="shake_one_shake">搖一搖</string>
+    <string name="shake_one_shake_change_song">摇一摇换歌</string>
+    <string name="lyrics_setting">歌词设置</string>
+    <string name="auto_download_lyrics">自动下载歌词</string>
+    <string name="file_filter">文件过滤</string>
+    <string name="filter_small_mp3_file">过滤小音频文件</string>
+    <string name="filter_short_time_mp3_file">过滤短时长音频文件</string>
+    <string name="I_will_ask_suggestion">我要提意见</string>
+    <string name="about_setting_layout">赞助我们</string>
+
+    <!-- system_version_layout.xml -->
+    <string name="edition_number">当前版本1.1.0</string>
+
+    <!-- layout_musicplay.xml -->
+    <string name="there_is_no_lyric_yet">暂无歌词</string>
+    <string name="gengxin">检查更新</string>
+    <string name="pingjia">给乐知好评</string>
+    <string name="welcome">欢迎页</string>
+    <string name="contact">联系我们</string>
+    <string name="team">开发团队</string>
+
+    <!-- 睡眠时间清单 -->
+    <string-array name="sleeptime">
+        <item><string name="off">"关闭"</string></item>
+        <item><string name="halfhourlater">"半小时后"</string></item>
+        <item><string name="anhourlater">"一小时后"</string></item>
+        <item><string name="twohourlater">"两小时后"</string></item>
+    </string-array>
+
+    <!-- music_list_play_queue.xml -->
+    <string name="clear">清空</string>
+    <string name="playqueue">播放队列</string>
+
+    <!-- sort_music_menu.xml -->
+    <string name="sortBysong">按歌曲名排序</string>
+    <string name="sortBysinger">按歌手名排序</string>
+    <string name="sortBytime">按歌曲时间排序</string>
+    <string name="sortBystyle">按歌曲流派排序</string>
+
+    <!-- Index_Activity.java -->
+    <string name="info">操作:</string>
+    <string name="dialog_messenge">你确定要退出程序吗？</string>
+    <string name="index_confrim">确定</string>
+    <string name="index_cancel">取消</string>
+
+    <!-- sleep_dialog_layout.xml -->
+    <string name="give_tip_time_over">提示时间到了(⊙o⊙)</string>
+    <string name="close_sleep_dialog">关闭</string>
+    
+    <!-- sleep_layout.xml -->
+    <string name="at_time_tip">定时提醒</string>
+    <string name="please_input_thing">请输入事件</string>
+    <string name="set_tip_time">设置提示时间</string>
+    
+    <!-- system_version.xml -->
+    <string name="version_info">版本信息</string>
+    
+</resources>

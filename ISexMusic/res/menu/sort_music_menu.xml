@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 歌曲名称 -->
+    <item
+        android:id="@+id/sort_by_song"
+        android:title="@string/sortBysong"/>
+    <!-- 按歌手名排序 -->
+    <item
+        android:id="@+id/sort_by_singer"
+        android:title="@string/sortBysinger"/>
+    <!-- 歌曲时间 -->
+    <item
+        android:id="@+id/sort_by_time"
+        android:title="@string/sortBytime"/>
+    <!-- 歌曲流派 -->
+    <item
+        android:id="@+id/sort_by_style"
+        android:title="@string/sortBystyle"/>
+</menu>

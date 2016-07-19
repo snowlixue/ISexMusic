@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuezhi.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <!-- 允许访问SD卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+     <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.yuezhi.activity.BeforeIndexActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity android:name="com.yuezhi.activity.Index_Activity"
+            android:launchMode="singleInstance">
+        </activity>
+        <!-- 单首歌曲播放界面 -->
+        <activity android:name="com.yuezhi.activity.Single_Play_Activity"></activity>
+        <!-- 响应播放列表的小界面 -->
+        <activity android:name="com.yuezhi.activity.Single_Play_Queue_Activity"></activity>
+        
+         <!-- 侧边栏Activity的注册    -->
+        <activity  android:name="com.yuezhi.side.Login_Activity"> </activity>
+        <activity  android:name="com.yuezhi.side.Setting_Activity"> </activity>
+        <activity  android:name="com.yuezhi.side.Sleep_Activity"> </activity>
+        <activity  android:name="com.yuezhi.side.System_Activity"></activity>
+        <receiver  android:name="com.yuezhi.side.Alarm_Receiver"  android:process=":remote"></receiver>
+        
+        <!-- service注册 -->
+        <service android:name="com.yuezhi.service.PlayBackService"></service>
+        
+        <!-- user数据库注册 -->
+        <provider android:name="com.yuezhi.provider.UserProvider"
+            android:authorities="com.lixue.user"
+            android:exported="true" >
+        </provider>
+        <!-- 桌面小组件注册 -->
+        <receiver android:name="com.yuezhi.widget.MusicWidget">
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.niit.action.UPDATE_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"/>
+        </receiver>
+    </application>
+
+</manifest>

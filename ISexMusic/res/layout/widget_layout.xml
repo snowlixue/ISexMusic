@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dark_light2"
+    android:orientation="horizontal" >
+     <LinearLayout 
+      android:id="@+id/widget_image_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true" >
+        <ImageButton
+            android:id="@+id/widget_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/a44"/>
+    </LinearLayout>
+    <LinearLayout 
+      android:id="@+id/widget_text_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:clickable="true"
+        android:focusable="true" >
+        <TextView 
+            android:id="@+id/widget_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:maxLength="40"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout 
+      android:id="@+id/widget_play_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true" >
+        <ImageButton 
+            android:id="@+id/widget_play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/kg_ic_playing_bar_play_default"
+            android:background="@color/grey_dark_light"/>
+    </LinearLayout>
+    <LinearLayout 
+      android:id="@+id/widget_next_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true" >
+        <ImageButton 
+            android:id="@+id/widget_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/kg_ic_playing_bar_next_default"
+            android:background="@color/grey_dark_light"/>
+    </LinearLayout>
+
+</LinearLayout>

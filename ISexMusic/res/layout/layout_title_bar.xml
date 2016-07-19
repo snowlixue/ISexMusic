@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <!--这部分感觉多余，所以注释掉
+            <ImageView 
+                android:id="@+id/switch_to_player"
+                android:layout_width="48dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/go_to_play"
+                />》
+        -->
+        <!-- 切换背景 -->
+
+        <ImageView
+            android:id="@+id/more_functions"
+            android:layout_width="48dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/more_functions_after_pressed"
+            android:clickable="true"
+            android:onClick="popupmenu"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/overflow_dark" />
+        <!-- 本地音乐 -->
+        
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="48dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_toLeftOf="@+id/more_functions"
+	    android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title_of_top2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/index_text2_view"
+            android:textColor="#ffffffff"
+            android:textSize="15dp" />
+        
+       
+
+	<TextView
+	    android:id="@+id/title_of_top1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+		android:layout_weight="1"
+	    android:gravity="center"
+	    android:text="@string/index_text1_view"
+	    android:textColor="#ffffffff"
+	    android:textSize="15dp" />
+
+		</LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

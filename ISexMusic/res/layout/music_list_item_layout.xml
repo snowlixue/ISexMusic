@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_list_item_top_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <!-- 歌曲时间 -->
+
+    <TextView
+        android:id="@+id/music_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5.0dp"
+        android:text="@string/process_time"
+        android:textColor="@drawable/text_color_selector" />
+
+    <!-- 歌名 -->
+
+    <TextView
+        android:id="@+id/music_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/albumImage"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/albumImage"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/music_name"
+        android:textColor="#ffffff" />
+
+    <!-- 歌手 -->
+
+    <TextView
+        android:id="@+id/music_list_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/music_list_name"
+        android:layout_below="@+id/music_list_name"
+        android:text="@string/music_singer"
+        android:textColor="#ffffff" />
+    <!-- 一张定制的图标图片 -->
+
+    <ImageView
+        android:id="@+id/albumImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+    android:orientation="vertical" >
+
+    <!-- 人物頭像 -->
+    
+   <RelativeLayout 
+       android:layout_width="match_parent"
+        android:layout_height="110.0dip">
+
+    <ImageView
+        android:id="@+id/user_login_imageview"
+        android:layout_width="110dip"
+        android:layout_height="110.0dip"
+        android:layout_gravity="left"
+        android:background="@drawable/button_backround_deep"
+        android:src="@drawable/fx_icon_user_default" />
+
+    
+    <TextView 
+        android:layout_width="160dip"
+        android:layout_height="match_parent"      
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/user_login_imageview"       
+        android:text="@string/login_and_register"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
+	</RelativeLayout>
+	
+   
+    <View
+        android:layout_width="240dip"
+        android:layout_height="5.0dip"
+        android:background="@drawable/jiange" />
+    
+    <!-- 播放列表 -->
+
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/playing_list"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+    <!-- 系统设置 -->
+
+    <TextView
+        android:id="@+id/setting_textview"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/system_settings"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+    <!-- 版本信息 -->
+    
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:id="@+id/system_version_textview"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/change_version"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+    <!-- 定时关闭 -->
+    
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:id="@+id/sleep_textview"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/at_time_close"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="5.0dip"
+        android:background="@drawable/jiange" />
+    <!-- 退出 -->
+
+    <TextView
+        android:id="@+id/exit_textview"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/exit"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

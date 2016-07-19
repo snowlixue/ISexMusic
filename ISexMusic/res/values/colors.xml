@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="holo_blue_light2">#aa33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_blue_dark_translucence">#aa0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_translucence">#ddffffff</color>
+    <color name="white_translucence2">#99ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="black_translucence">#dd000000</color>
+    <color name="black_translucence2">#55000000</color>
+    <color name="grey_dark">#ff454545</color>
+    <color name="grey_white">#fff0f0f0</color>
+    <color name="grey_dark_light">#55666666</color>
+    <color name="grey_dark_light2">#55aaaaaa</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="pink">#ffdeff</color>
+    <color name="after_pink">#ff44ff</color>
+    
+    <color name="translucence">#b0000000</color>
+    <color name="dialog_line">#8F999999</color>
+    <color name="menu_bg_focus">#C8000000</color>
+    <color name="menu_bg_normal">#FF666666</color>
+</resources>

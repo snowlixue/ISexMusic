@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="220dip"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+	android:paddingTop="10dip"
+	android:background="@drawable/dialog"
+	android:paddingBottom="10dip"
+	android:gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/sleep_dialod" />
+
+	<TextView  
+	android:text="@string/give_tip_time_over"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:textColor="@color/black"
+	android:gravity="left"
+    />
+
+	<Button
+	    android:id="@+id/mywktzOk"
+	    android:layout_width="60dip"
+	    android:layout_height="40dip"
+	    android:gravity="center"
+	    android:text="@string/close_sleep_dialog"
+	    android:textColor="@color/black"
+	    android:background="@drawable/sleep_dialog_btn"
+	    android:textSize="18dip" />
+
+</LinearLayout>
